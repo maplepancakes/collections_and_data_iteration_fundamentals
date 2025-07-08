@@ -1,0 +1,1 @@
+### Objective: For practicing basics dynamic arrays (List), hashtable (Dictionary), and LINQ
