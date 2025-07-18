@@ -7,4 +7,4 @@ StackPractice stackPractice = new StackPractice();
 
 // stackPractice.ReverseString("hello");
 // stackPractice.IsPalindrome("madam");
-stackPractice.BalancedBrackets("{[]}");
+stackPractice.BalancedBrackets("{}()[]()()(())[[]][][]{{[]}}");

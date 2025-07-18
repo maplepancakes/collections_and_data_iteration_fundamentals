@@ -51,26 +51,39 @@ public class StackPractice
         Console.WriteLine($"IsPalindrome: {result}");
     }
 
-    public bool BalancedBrackets(String input)
+    public void BalancedBrackets(String input)
     {
-        bool result = true;
-        if (input.Length % 2 != 0)
+        Dictionary<char, char> bracketCombination = new Dictionary<char, char>()
         {
-            return false;
-        }
-        
+            {']', '['},
+            {'}', '{'},
+            {')', '('}
+        };
         Stack<char> openBrackets = new Stack<char>();
         for (int i = 0; i < input.Length; i++)
         {
-            if (input[i] == '[' || input[i] == '{' || input[i] == '(')
+            if (bracketCombination.ContainsValue(input[i]))
             {
                 openBrackets.Push(input[i]);
                 continue;
             }
-            
-            char openBracket = openBrackets.Pop();
-            
+
+            if (bracketCombination.ContainsKey(input[i]))
+            {
+                if (openBrackets.Count == 0 || openBrackets.Pop() != bracketCombination[input[i]])
+                {
+                    Console.WriteLine("BalancedBrackets: false");
+                    return;
+                }
+            }
         }
-        
+
+        if (openBrackets.Count != 0)
+        {
+            Console.WriteLine("BalancedBrackets: false");
+            return;
+        }
+
+        Console.WriteLine("BalancedBrackets: true");
     }
 }
