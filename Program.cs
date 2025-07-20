@@ -3,6 +3,7 @@
 ListPractice listPractice = new ListPractice();
 StackPractice stackPractice = new StackPractice();
 RecursionPractice recursionPractice = new RecursionPractice();
+BacktrackingPractice backtrackingPractice = new BacktrackingPractice();
 
 // listPractice.QuestionThree(new List<int> {1, 6, 2, 5, 10, 13, 9, -4, -8, -3, -10, -9});
 
@@ -16,4 +17,6 @@ RecursionPractice recursionPractice = new RecursionPractice();
 // recursionPractice.SumOfDigits(55556666);
 // recursionPractice.IsPalindrome("cattac");
 // recursionPractice.PowerFunction(3, -5);
-recursionPractice.CountNumberOfZeroes(120450200);
+// recursionPractice.CountNumberOfZeroes(120450200);
+
+backtrackingPractice.GenerateBinaryStrings("", 3);
