@@ -12,3 +12,8 @@ RecursionPractice recursionPractice = new RecursionPractice();
 
 // recursionPractice.PrintNumbersFromOneToN(100);
 // recursionPractice.PrintNumbersFromNToOne(100);
+// recursionPractice.CalculateFactorial(10);
+// recursionPractice.SumOfDigits(55556666);
+// recursionPractice.IsPalindrome("cattac");
+// recursionPractice.PowerFunction(3, -5);
+recursionPractice.CountNumberOfZeroes(120450200);
